@@ -70,5 +70,19 @@ swiftmailer:
 
 # HWI OAuth
 hwi_oauth:
-    firewall_name: main
-    resource_owners: ~
+    # name of the firewall in which this bundle is active, this setting MUST be set
+    firewall_name: secured_area
+    resource_owners:
+            github:
+                type:                github
+                client_id:           aca96a0248936c0f2c36
+                client_secret:       a0590fe74cb3c4c70da9834987de1fdc7f144742
+            google:
+                type:                google
+                client_id:           839384178504-idab58i6die7ftihttv8apf2nausfqmd.apps.googleusercontent.com
+                client_secret:       zU6W0AUiC4fXH7joOnAFWza0
+            facebook:
+                type:                facebook
+                client_id:           707666179367245
+                client_secret:       8ba5b717a8ed1e20dd67dd5f0a533a7f
+

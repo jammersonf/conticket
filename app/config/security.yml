@@ -13,7 +13,7 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        main:
+        secured_area:
             anonymous: ~
             # activate different ways to authenticate
 
@@ -25,10 +25,9 @@ security:
 
             oauth:
                 resource_owners:
-#                    facebook:           "/login/check-facebook"
-#                    google:             "/login/check-google"
-#                    my_custom_provider: "/login/check-custom"
-#                    my_github:          "/login/check-github"
+                    github:           "/login/check-github"
+                    google:           "/login/check-google"
+                    facebook:           "/login/check-facebook"
 
                 login_path:     /login
 #                use_forward:    false
