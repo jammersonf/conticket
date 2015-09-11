@@ -1,6 +1,7 @@
-o_auth:
-    resource: "@OAuthBundle/Resources/config/routing.yml"
-    prefix:   /
+
+conticket_api:
+    resource: "@ConticketApiBundle/Resources/config/routing.yml"
+    prefix:   /api
 
 app:
     resource: "@AppBundle/Controller/"
