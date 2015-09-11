@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new \HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
+            new OAuthBundle\OAuthBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
