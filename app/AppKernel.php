@@ -35,7 +35,7 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new AppBundle\AppBundle(),
-            new OAuthBundle\OAuthBundle(),
+            new Conticket\OAuthBundle\OAuthBundle(),
             new Conticket\ApiBundle\ConticketApiBundle(),
         ];
 

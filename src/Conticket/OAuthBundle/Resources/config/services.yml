@@ -1,0 +1,4 @@
+services:
+    conticket_user_provider:
+        class: Conticket\OAuthBundle\Auth\OAuthUserProvider
+        arguments: [@session, @doctrine_mongodb.odm.document_manager]
